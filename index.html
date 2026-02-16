@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Image Search Engine</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Image Search Engine</h1>
+    <div class="container">
+        <h1>Image Search Engine</h1>
 
-    <form id="search-form">
-        <input type="text" id="search-box" placeholder="Search for images..." required>
-        <button type="submit">Search</button>
-    </form>
+        <form id="search-form" class="search-box">
+            <input type="text" id="search-box" placeholder="Search high quality images..." required>
+            <button type="submit">Search</button>
+        </form>
 
-    <div id="image-results"></div>
+        <div id="loader" class="loader hidden"></div>
+
+        <div id="image-results" class="gallery"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+
